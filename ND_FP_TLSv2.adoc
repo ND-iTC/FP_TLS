@@ -3,7 +3,7 @@
 :toc-title!:
 :toc-placement!:
 :data-uri: {docdir}
-:imagesdir: {docdir}
+:imagesdir: {docdir}/images
 
 
 = Network Device iTC Functional Package for Transport Layer Security (TLS)
