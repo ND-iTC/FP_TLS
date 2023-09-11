@@ -9,6 +9,7 @@
 = Network Device iTC Functional Package for Transport Layer Security (TLS)
 
 Version: 1.0 draft +
+
 Date: TBD +
 
 === Revision History
@@ -26,6 +27,7 @@ Date: TBD +
 === Contents
 
 toc::[]
+
 
 == 1 Introduction
 
@@ -46,19 +48,23 @@ The following sections list Common Criteria and technology terms used in this do
 
 ==== 1.3.1 Common Criteria Terms
 
+
 [width="100%",cols="50%,50%",]
 |===
 a|
+
 Assurance
 
 |Grounds for confidence that a TOE meets the SFRs [CC].
 
 a|
+
 Base Protection Profile (Base-PP)
 
 |Protection Profile used as a basis to build a PP-Configuration.
 
 a|
+
 Collaborative Protection Profile (cPP)
 
 |A Protection Profile developed by international technical communities and approved by multiple schemes.
@@ -79,11 +85,13 @@ Common Evaluation Methodology (CEM)
 |Common Evaluation Methodology for Information Technology Security Evaluation.
 
 a|
+
 Distributed TOE
 
 |A TOE composed of multiple components operating as a logical whole.
 
 a|
+
 Extended Package (EP)
 
 |A deprecated document form for collecting SFRs that implement a particular protocol, technology, or functionality. See Functional Packages.
@@ -114,47 +122,57 @@ Protection Profile Module (PP-Module)
 |An implementation-independent statement of security needs for a TOE type complementary to one or more Base-PPs.
 
 a|
+
 Security Assurance Requirement (SAR)
 
 |A requirement to assure the security of the TOE.
 
 a|
+
 Security Functional Requirement (SFR)
 
 |A requirement for security enforcement by the TOE.
 
 a|
+
 Security Target (ST)
 
 |A set of implementation-dependent security requirements for a specific
 product.
 
 a|
+
 Target of Evaluation (TOE)
 
 |The product under evaluation.
 
 a|
+
 TOE Security Functionality (TSF)
 
 |The security functionality of the product under evaluation.
 
 a|
+
 TOE Summary Specification (TSS)
 
 |A description of how a TOE satisfies the SFRs in an ST.
 |===
 
+
 ==== 1.3.2 Technical Terms
+
 
 [width="100%",cols="50%,50%",]
 |===
 a|
+
 Certificate Authority (CA)
 
 |Issuer of digital certificates.
 
 a|
+
 Datagram Transport Layer Security (DTLS)
 
 |Cryptographic network protocol, based on TLS, which provides communications security for datagram protocols.
@@ -172,11 +190,13 @@ The Target of Evaluation (TOE) in this Package is a product that acts as a (D)TL
 The contents of this Package must be appropriately combined with a cPP, PP, or PP-Module. When this Package is instantiated by a cPP, PP, or PP-Module, the Package must include selection-based requirements in accordance with the selections or assignments indicated in the cPP, PP, or PP-Module. These may be expanded by the ST author.
 
 The cPP, PP, or PP-Module which instantiates this Package must typically include the following components in order to satisfy dependencies of this Package. It is the responsibility of the cPP, PP, or PP-Module author who instantiates this Package to
+
 ensure that dependence on these components is satisfied: +
 
 [width="100%",cols="50%,50%",]
 |===
 |Component |Explanation
+
 
 |FCS_CKM.1 |To support TLS ciphersuites that use RSA, DHE or ECDHE for key exchange, the cPP, PP, or PP-Module must include FCS_CKM.1 and specify the corresponding key generation algorithm. +
 
@@ -328,9 +348,11 @@ The auditable events in the table below are included in a Security Target if bot
 
 [.text-center]
 *Table 2: Auditable Events for Selection-based Requirements*
+
 [cols=",,",]
 |===
 |Requirement |Auditable Events |Additional Audit Record Contents
+
 
 .3+|FCS_DTLSC_EXT.1 |[selection: _Establishment/termination of a DTLS session, None_] |[selection: _Non-TOE endpoint of connection, None_]
 
@@ -4486,9 +4508,11 @@ psk_dhe_ke.
 
 == Appendix E - Bibliography
 
+
 [width="100%",cols="50%,50%",]
 |===
 |Identifier |Title
+
 
 |[CC]| Common Criteria for Information Technology Security Evaluation
 
@@ -4497,5 +4521,6 @@ http://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf[Part 1: Intr
 http://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf[Part 2: Security Functional Components], CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.
 
 http://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf[Part 3: Security Assurance Components], CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.
+
 
 |===
